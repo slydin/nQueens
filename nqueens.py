@@ -133,8 +133,12 @@ def numQueens(checkBoard):
 #print leftDiagonalCheck(test, 3, 3) # should be true
 #print leftDiagonalCheck(test, 3, 2) # should be false
 
-chessBoard = createBoard(start())
-print nQueens(chessBoard,0)
-print "Solution: " + "\n"
-for i in range(len(chessBoard)):
-    print chessBoard[i]
+def main():
+    chessBoard = createBoard(start())
+    print nQueens(chessBoard,0)
+    print "Solution: " + "\n"
+    for i in range(len(chessBoard)):
+        print chessBoard[i]
+
+if name == '__main__':
+    main()
