@@ -16,7 +16,7 @@ def start():
                     print('Please insert a positive integer.')
                 else:
                     break
-    print "N = " + str(numberOfQueens)
+    print("N = " + str(numberOfQueens))
     return numberOfQueens
 
 def createBoard(numberOfQueens):
@@ -27,9 +27,9 @@ def createBoard(numberOfQueens):
         for j in range(numberOfQueens):
             chessRow.append(0)
         chessBoard.append(chessRow)
-    print "Clear Board: " + "\n"
+    print("Clear Board: " + "\n")
     for i in range(numberOfQueens):
-        print chessBoard[i]
+        print(chessBoard[i])
     return chessBoard
 
 def isValid(chessBoard, row, col):
@@ -135,10 +135,9 @@ def numQueens(checkBoard):
 
 def main():
     chessBoard = createBoard(start())
-    print nQueens(chessBoard,0)
-    print "Solution: " + "\n"
+    nQueens(chessBoard,0)
+    print("Solution: " + "\n")
     for i in range(len(chessBoard)):
-        print chessBoard[i]
+        print(chessBoard[i])
 
-if name == '__main__':
-    main()
+main()
