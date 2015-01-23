@@ -140,4 +140,5 @@ def main():
     for i in range(len(chessBoard)):
         print(chessBoard[i])
 
-main()
+if __name__ == '__main__':
+    main()
